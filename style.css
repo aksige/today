@@ -71,7 +71,7 @@ img {
 	padding-top: 0.7em;
 }
 
-nav ul {
+.none-default {
 	display: none;
 }
 
@@ -94,6 +94,20 @@ nav ul {
 	font-size: 1.4rem;
 	text-align: center;
 	font-weight: 900;
+}
+
+.nav-ul {
+	text-align: center;
+	list-style: none;
+}
+
+.nav-ul li {
+}
+
+.nav-ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--dark-color);
 }
 
 .about {
@@ -243,12 +257,12 @@ nav ul {
 
 .footer-title {
 	font-size: 1rem;
-	margin-left: 10em;
 }
 
 .footer-content {
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 }
 
 .action-group {
@@ -369,24 +383,125 @@ nav ul {
 	}
 }
 
-@media (min-width: 1600px) and (max-width: 1689px) {
+@media (min-width: 1560px) and (max-width: 1689px) {
+	.container {
+		padding: 0 0 0 15rem;
+	}
 	.around {
-		right: 30em;
+		right: 35em;
 	}
 	.btn-up {
-		right: 15em;
+		right: 11em;
 	}
 }
 
-@media (max-width: 1599px) {
+@media (min-width: 1491px) and (max-width: 1559px) {
+	.container {
+		padding: 0 0 0 10rem;
+	}
+	.around {
+		right: 35em;
+	}
+	.btn-up {
+		right: 19em;
+	}
+}
+
+@media (max-width: 1490px) {
+	.container {
+		padding: 0 0 0 5rem;
+	}
+	.around {
+		right: 32em;
+	}
+	.btn-up {
+		right: 17em;
+	}
+	.logo-wrapper {
+		width: 15em;
+	}
+	.motto {
+		font-size: 2.2rem;
+	}
+	.motto-description {
+		font-size: 1.9rem;
+		margin-top: -0.5em;
+	}
+	.logo-description {
+		font-size: 0.8rem;
+	}
+	.navigation-title {
+		padding: 0.5em 0;
+		font-size: 1.2rem;
+	}
+	.background-right {
+		margin-left: 15em;
+	}
+	.smile-man img {
+		width: 18em;
+	}
+	.about {
+		height: 26em;
+	}
+	.btn-up {
+		right: 21em;
+	}
+	.money-any-banks > div > img {
+		width: 4em;
+	}
+	.money-any-banks {
+		bottom: 2.5em;
+	}
+}
+
+@media (max-width: 1274px) {
+	.container {
+		padding: 0 0 0 1rem;
+	}
+	.around {
+		right: 15em;
+	}
+	.motto {
+		font-size: 1.6rem;
+	}
+	.motto-description {
+		font-size: 1.4rem;
+		margin-top: -1.3em;
+	}
+	.btn-wrapper,
+	.money-any-banks {
+		display: none;
+	}
+	.money-any-banks > div > img {
+		width: 2em;
+	}
+	.smile-man img {
+		width: 14em;
+	}
+	.about {
+		height: 18em;
+	}
+	.company-wrapper > div > img {
+		width: 5rem;
+	}
+	.background-right {
+		margin-left: 15em;
+	}
+}
+
+@media (max-width: 1100px) {
+	.background-right {
+		margin-left: 10em;
+	}
+}
+
+@media (max-width: 1000px) {
 	.container {
 		padding: 0;
 	}
 	.around,
 	.content-right,
-	.btn-wrapper,
 	.footer__btn-wrapper,
-	.money-any-banks,
 	.img-wrapper > img:first-child {
 		display: none;
 	}
@@ -402,39 +517,29 @@ nav ul {
 	.footer-content {
 		flex-direction: column;
 	}
-	.footer-title {
-		margin-left: 0;
+	.footer {
+		display: flex;
+		align-items: center;
 		justify-content: center;
 	}
 	.background-right {
 		margin: 0;
 		position: absolute;
-		top: 9em;
-		left: 11em;
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-	}
-	.smile-man img {
-		width: 12em;
-	}
-	.rehau img {
-		width: 4em;
+		top: 8em;
+		left: auto;
 	}
 	.company-wrapper {
 		margin-top: 2em;
 	}
-	.kbe img {
-		width: 6em;
-	}
 	.about {
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 40em;
+		margin-bottom: 33em;
 	}
 	.motto-wrapper {
 		position: absolute;
-		top: 15em;
-		left: 2em;
+		top: 25em;
+		left: auto;
 	}
 	.background-right {
 		position: relative;
@@ -467,5 +572,21 @@ nav ul {
 	}
 	.measure-action {
 		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.smile-man img {
+		margin-left: -6em;
+		width: 12em;
+	}
+	.company-wrapper {
+		margin-top: -4em;
+	}
+	.motto-wrapper {
+		position: absolute;
+		top: 25em;
+		left: auto;
+		margin-right: 0;
 	}
 }
