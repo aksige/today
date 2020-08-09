@@ -1,0 +1,471 @@
+:root {
+	font-size: calc(0.5em+10px);
+	--main-font: ALS Schlange sans;
+	--font-color: #ffffff;
+	--main-color: #466d80;
+	--shadow-color: #0b99e0;
+	--primary-color: #ffe600;
+	--around-color: #1e9fe0;
+	--success-color: #c7c7c7;
+	--border-color: #9b9a99;
+	--btn-color: #f26422;
+	--dark-color: #000000;
+	--action-color: #fff854;
+	--gray-color: #9a9a9a;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: var(--main-font);
+}
+
+img {
+	display: block;
+	object-fit: contain;
+}
+
+.container {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 0 0 25em;
+}
+
+.header {
+	background-color: var(--font-color);
+}
+
+.header-upper {
+	display: flex;
+	position: relative;
+	align-items: center;
+	padding-top: 1em;
+	z-index: 5;
+}
+
+.logo-description {
+	font-size: 1.2rem;
+}
+
+.logo-wrapper {
+	width: 20em;
+	height: 5em;
+	border: 2px solid var(--primary-color);
+	border-radius: 4em 0 4em;
+	-webkit-border-radius: 4em 0 4em;
+	-moz-border-radius: 4em 0 4em;
+}
+
+.header-title {
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 900;
+	padding-top: 0.7em;
+}
+
+nav ul {
+	display: none;
+}
+
+.content-right {
+	margin-left: 25em;
+}
+
+.content-right h2 {
+	font-size: 1.2rem;
+}
+
+.navigation {
+	position: relative;
+	background-color: var(--primary-color);
+	z-index: 5;
+}
+
+.navigation-title {
+	padding: 1em 0;
+	font-size: 1.4rem;
+	text-align: center;
+	font-weight: 900;
+}
+
+.about {
+	display: flex;
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.company-wrapper {
+	display: flex;
+}
+
+.motto-wrapper {
+	position: relative;
+	margin-right: 4em;
+	z-index: 5;
+}
+
+.money-any-banks {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.section-second {
+	background-color: var(--border-color);
+	height: 24em;
+}
+
+.section-third {
+	background-color: var(--success-color);
+	height: 24em;
+}
+
+.motto {
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.motto-description {
+	margin-top: -3rem;
+	font-size: 2.5rem;
+	color: var(--primary-color);
+	font-weight: 900;
+	width: 7em;
+}
+
+.img-description {
+	margin-top: -0.5em;
+	margin-left: 1em;
+	font-size: 1rem;
+	color: var(--font-color);
+	transform: rotate(-3deg);
+}
+
+.img-wrapper > img:last-child {
+	display: none;
+}
+
+.wrapper__around {
+	position: relative;
+	overflow: hidden;
+}
+
+.around {
+	position: absolute;
+	height: 280em;
+	width: 280em;
+	background: repeating-linear-gradient(
+		135deg,
+		var(--around-color),
+		var(--around-color) 1em,
+		var(--shadow-color) 1.2em,
+		var(--shadow-color) 1.4em
+	);
+	border-radius: 50%;
+	top: -56em;
+	right: 61em;
+	z-index: 1;
+}
+
+.background-right {
+	display: flex;
+	margin-left: 8em;
+}
+
+.company-wrapper {
+	margin-top: 6em;
+}
+
+.smile-man {
+	position: relative;
+	align-self: flex-end;
+}
+
+.money-any-banks {
+	position: absolute;
+	bottom: 6em;
+	right: 3em;
+}
+
+.money-any-banks > *:not(:last-child) {
+	margin-right: 1.4em;
+}
+
+.second {
+	position: relative;
+}
+
+.btn {
+	padding-left: 4em;
+	border-radius: 0.2em;
+	text-align: left;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 1rem;
+	color: var(--font-color);
+	outline: none;
+	cursor: pointer;
+}
+
+.btn-up {
+	position: absolute;
+	height: 5em;
+	top: -2.5em;
+	right: 28em;
+	background: var(--btn-color) url(./assets/images/calc.svg) no-repeat 1em center;
+	border: 6px solid var(--font-color);
+	border-radius: 1em;
+}
+
+.footer {
+	background-color: var(--main-color);
+}
+
+.btn-down {
+	height: 3.3em;
+	width: 9em;
+	background: var(--btn-color) url(./assets/images/actions.svg) no-repeat 10px center;
+	border: 0;
+	outline: 2px dashed var(--font-color);
+	outline-offset: -4px;
+	border-radius: 0.4em;
+}
+
+.footer-title {
+	font-size: 1rem;
+	margin-left: 10em;
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+}
+
+.action-group {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.measure-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--action-color);
+	padding: 0.4em 1.3em;
+}
+.measure-description {
+	margin-left: 0.8em;
+	text-align: center;
+}
+.measure-description span {
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.55em;
+}
+.measure-description b {
+	font-weight: 900;
+	font-size: 2rem;
+	letter-spacing: 0.4em;
+}
+.measure-action {
+	position: relative;
+	margin-top: 1em;
+	border: 1px solid var(--btn-color);
+	padding: 0.5em 2em;
+	color: var(--btn-color);
+	border-radius: 0.3em;
+}
+.measure-action:before {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid var(--btn-color);
+	right: 50%;
+	top: -20px;
+}
+.measure-action:after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid var(--font-color);
+	right: 50%;
+	top: -19px;
+}
+
+.burger {
+	display: none;
+	position: relative;
+	width: 2em;
+	height: 0.3em;
+	background-color: var(--dark-color);
+}
+
+.burger:before {
+	content: "";
+	position: absolute;
+	width: 2em;
+	height: 0.3em;
+	background-color: var(--dark-color);
+	top: 0.5em;
+	left: 0;
+}
+
+.burger:after {
+	content: "";
+	position: absolute;
+	width: 2em;
+	height: 0.3em;
+	background-color: var(--dark-color);
+	top: -0.5em;
+	left: 0;
+}
+
+@media (min-width: 2100px) and (max-width: 2243px) {
+	.around {
+		right: 50em;
+	}
+}
+
+@media (min-width: 1890px) and (max-width: 2099px) {
+	.around {
+		right: 45em;
+	}
+}
+
+@media (min-width: 1810px) and (max-width: 1889px) {
+	.around {
+		right: 40em;
+	}
+	.btn-up {
+		right: 24em;
+	}
+}
+
+@media (min-width: 1690px) and (max-width: 1809px) {
+	.around {
+		right: 36em;
+	}
+	.btn-up {
+		right: 20em;
+	}
+}
+
+@media (min-width: 1600px) and (max-width: 1689px) {
+	.around {
+		right: 30em;
+	}
+	.btn-up {
+		right: 15em;
+	}
+}
+
+@media (max-width: 1599px) {
+	.container {
+		padding: 0;
+	}
+	.around,
+	.content-right,
+	.btn-wrapper,
+	.footer__btn-wrapper,
+	.money-any-banks,
+	.img-wrapper > img:first-child {
+		display: none;
+	}
+	.header-upper {
+		justify-content: center;
+	}
+	.motto-wrapper {
+		justify-content: center;
+	}
+	.img-wrapper > img:last-child {
+		display: block;
+	}
+	.footer-content {
+		flex-direction: column;
+	}
+	.footer-title {
+		margin-left: 0;
+		justify-content: center;
+	}
+	.background-right {
+		margin: 0;
+		position: absolute;
+		top: 9em;
+		left: 11em;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	.smile-man img {
+		width: 12em;
+	}
+	.rehau img {
+		width: 4em;
+	}
+	.company-wrapper {
+		margin-top: 2em;
+	}
+	.kbe img {
+		width: 6em;
+	}
+	.about {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 40em;
+	}
+	.motto-wrapper {
+		position: absolute;
+		top: 15em;
+		left: 2em;
+	}
+	.background-right {
+		position: relative;
+	}
+	.footer {
+		height: 30em;
+	}
+	.action-group {
+		display: flex;
+	}
+	.logo-description {
+		color: var(--gray-color);
+	}
+	.navigation {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.burger {
+		display: block;
+	}
+	.motto {
+		font-size: 2rem;
+	}
+	.measure-description span {
+		font-size: 0.6rem;
+	}
+	.measure-description b {
+		font-size: 1rem;
+	}
+	.measure-action {
+		font-size: 0.9rem;
+	}
+}

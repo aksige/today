@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "ALS Schlange sans";
+	src: url("./assets/fonts/als/ALSSchlangesans-Bold.eot");
+	src: local("ALS Schlange sans Bold"), local("ALSSchlangesans-Bold"),
+		url("./assets/fonts/als/ALSSchlangesans-Bold.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/als/ALSSchlangesans-Bold.woff2") format("woff2"),
+		url("./assets/fonts/als/ALSSchlangesans-Bold.woff") format("woff"),
+		url("./assets/fonts/als/ALSSchlangesans-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ALS Schlange sans";
+	src: url("./assets/fonts/als/ALSSchlangesans-Black.eot");
+	src: local("ALS Schlange sans Black"), local("ALSSchlangesans-Black"),
+		url("./assets/fonts/als/ALSSchlangesans-Black.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/als/ALSSchlangesans-Black.woff2") format("woff2"),
+		url("./assets/fonts/als/ALSSchlangesans-Black.woff") format("woff"),
+		url("./assets/fonts/als/ALSSchlangesans-Black.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ALS Schlange sans";
+	src: url("./assets/fonts/als/ALSSchlangesans-Light.eot");
+	src: local("ALS Schlange sans Light"), local("ALSSchlangesans-Light"),
+		url("./assets/fonts/als/ALSSchlangesans-Light.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/als/ALSSchlangesans-Light.woff2") format("woff2"),
+		url("./assets/fonts/als/ALSSchlangesans-Light.woff") format("woff"),
+		url("./assets/fonts/als/ALSSchlangesans-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ALS Schlange sans";
+	src: url("./assets/fonts/als/ALSSchlangesans-Thin.eot");
+	src: local("ALS Schlange sans Thin"), local("ALSSchlangesans-Thin"),
+		url("./assets/fonts/als/ALSSchlangesans-Thin.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/als/ALSSchlangesans-Thin.woff2") format("woff2"),
+		url("./assets/fonts/als/ALSSchlangesans-Thin.woff") format("woff"),
+		url("./assets/fonts/als/ALSSchlangesans-Thin.ttf") format("truetype");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ALS Schlange sans";
+	src: url("./assets/fonts/als/ALSSchlangesans.eot");
+	src: local("ALS Schlange sans"), local("ALSSchlangesans"),
+		url("./assets/fonts/als/ALSSchlangesans.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/als/ALSSchlangesans.woff2") format("woff2"),
+		url("./assets/fonts/als/ALSSchlangesans.woff") format("woff"),
+		url("./assets/fonts/als/ALSSchlangesans.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
