@@ -96,20 +96,6 @@ img {
 	font-weight: 900;
 }
 
-.nav-ul {
-	text-align: center;
-	list-style: none;
-}
-
-.nav-ul li {
-}
-
-.nav-ul li a {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: var(--dark-color);
-}
-
 .about {
 	display: flex;
 	position: relative;
@@ -128,22 +114,6 @@ img {
 	z-index: 5;
 }
 
-.money-any-banks {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-}
-
-.section-second {
-	background-color: var(--border-color);
-	height: 24em;
-}
-
-.section-third {
-	background-color: var(--success-color);
-	height: 24em;
-}
-
 .motto {
 	font-size: 3rem;
 	font-weight: 900;
@@ -155,6 +125,12 @@ img {
 	color: var(--primary-color);
 	font-weight: 900;
 	width: 7em;
+}
+
+.money-any-banks {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .img-description {
@@ -219,6 +195,16 @@ img {
 	position: relative;
 }
 
+.section-second {
+	background-color: var(--border-color);
+	height: 24em;
+}
+
+.section-third {
+	background-color: var(--success-color);
+	height: 24em;
+}
+
 .btn {
 	padding-left: 4em;
 	border-radius: 0.2em;
@@ -271,6 +257,7 @@ img {
 	justify-content: center;
 	align-items: center;
 }
+
 .measure-wrapper {
 	display: flex;
 	align-items: center;
@@ -278,20 +265,24 @@ img {
 	background-color: var(--action-color);
 	padding: 0.4em 1.3em;
 }
+
 .measure-description {
 	margin-left: 0.8em;
 	text-align: center;
 }
+
 .measure-description span {
 	font-size: 1rem;
 	font-weight: 700;
 	letter-spacing: 0.55em;
 }
+
 .measure-description b {
 	font-weight: 900;
 	font-size: 2rem;
 	letter-spacing: 0.4em;
 }
+
 .measure-action {
 	position: relative;
 	margin-top: 1em;
@@ -300,6 +291,7 @@ img {
 	color: var(--btn-color);
 	border-radius: 0.3em;
 }
+
 .measure-action:before {
 	content: "";
 	width: 0;
@@ -312,6 +304,7 @@ img {
 	right: 50%;
 	top: -20px;
 }
+
 .measure-action:after {
 	content: "";
 	width: 0;
@@ -563,6 +556,18 @@ img {
 	}
 	.motto {
 		font-size: 2rem;
+		text-align: center;
+		-webkit-text-stroke: 1px var(--font-color);
+		text-shadow: 2px 0 2px var(--dark-color), 0 1px 1px var(--dark-color),
+			-1px 0 1px var(--dark-color), 0 -1px 1px var(--font-color);
+	}
+	.motto-description {
+		text-align: center;
+		width: 13em;
+		color: var(--btn-color);
+		-webkit-text-stroke: 1px var(--font-color);
+		text-shadow: 2px 0 2px var(--dark-color), 0 1px 1px var(--dark-color),
+			-1px 0 1px var(--dark-color), 0 -1px 1px var(--dark-color);
 	}
 	.measure-description span {
 		font-size: 0.6rem;
